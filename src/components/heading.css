@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../public/backgroundPic.avif);
+    background-size: cover;
+    background-position-x: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+.header-logo {
+    opacity: 0.7;
+    border-radius: 4px;
+}  

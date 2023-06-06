@@ -1,0 +1,47 @@
+h2 {
+    padding-left: 5px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.card {
+    margin: 45px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin-right: 2%;
+}
+.menuContainer {
+    background-image: url(../public/backgroundPic.avif);
+    background-size: cover;
+    background-position-x: right;
+    animation: slideBackground 15s infinite;
+}
+
+.card-text {
+    width: 90%;
+}
+
+.card-img {
+    width: 35%;
+    height: 90%;
+    border-radius: 8px;
+    border: solid 2px #c82bb8;
+}
+
+/* @keyframes slideBackground {
+    0% {
+      background-position-x: right;
+    }
+    50% {
+      background-position-x: left;
+    }
+    100% {
+      background-position-x: right;
+    }
+} */

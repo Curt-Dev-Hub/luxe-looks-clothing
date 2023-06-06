@@ -1,0 +1,48 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    overflow-y: scroll;
+    /* background-color: #3d73a8; */
+    background-image: url(../public/backgroundPic.avif);
+    background-size: cover;
+    border-right: 1px solid #dee2e6;
+    padding: 88px 15px 0 30px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background-color: #FF69B4; /* dark pink */
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #f8f9fa;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #dee2e6;
+    border-radius: 4px;
+}
+
+.sidebar a {
+    font-size: 18px;
+    color: #212529;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.sidebar a:hover {
+    color: #007bff;
+}
