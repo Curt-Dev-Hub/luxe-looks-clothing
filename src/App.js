@@ -1,68 +1,82 @@
-import React from 'react';
+import {React, useState, useEffect, useRef} from 'react';
+import MensLeatherJackets from './MensLeatherJackets';
+import styles from './Navbar.module.css';
 import './App.css';
+import logo from './luxe_looks.png';
 import Header from './components/Heading';
 import './Sidebar.css';
 import ProductsMenu from './ProductsMenu';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; deprecated
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
-import CustomerSupport from './CustomerSupport';
- 
-// import Card from 'react-bootstrap/Card';
-import { Nav } from 'react-bootstrap';
+import { BrowserRouter as Router, Routes, Route, Link,useLocation } from 'react-router-dom';
+import { Container, Row, Col, Nav, NavDropdown, Navbar, NavItem, MenuItem  } from 'react-bootstrap';
+import ContactUs from './ContactUs';
+import { useMediaQuery } from 'react-responsive';
+import MaxiDresses from './MaxiDresses';
+import Trainers from './Trainers';
 
 
-// function App() {
-//     //variable for user welcome/sign in
-//     const signedIn = Math.random() < 0.5; // 50% chance of being truthy/falsy;
 
-//     return (
-//       <Router>
-//         <Container fluid>
-//           <Row>
-//             <Col xs={2}>
-//               <Sidebar />
-//             </Col>
-//             <Col xs={10} style={{ marginLeft: '245px' }}>
-//               <Header signedIn={signedIn} />
-//               <Switch>
-//                 <Route exact path="/" component={HomePage} />
-//                 {/* <Route path="/products" component={ProductsPage} /> */}
-//                 <Route path="/customer-support" component={CustomerSupport} />
-//               </Switch>
-//             </Col>
-//           </Row>
-//         </Container>
-//       </Router>
-//     );
-// }
-
+//  ------------------------------------------  Main App Component with Router for both Navbars ------------------------------------ 
 
 function App() {
+  const mainContentRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if(mainContentRef.current) {
+      mainContentRef.current.scrollTo(0, 0);
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   //variable for user welcome/sign in
   const signedIn = Math.random() < 0.5; // 50% chance of being truthy/falsy;
+  const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <Router>
+    <>
+      <nav className={styles.nav}>
+        <Link to='/' className={styles.siteLink}>
+          <img src={logo} width="70" height="70" />
+        </Link>
+        <ul>
+          <li>
+            <Link to='/mens-leather-jackets'>Leather Jackets</Link>
+          </li>
+          <li>
+            <Link to='/maxi-dresses'>Maxi Dresses</Link>
+          </li>
+          <li>
+            <Link to='/trainers'>Children's Trainers</Link>
+          </li>
+          <li>
+            <Link to='/contact-us'>Contact Us</Link>
+          </li>
+        </ul>
+      </nav>
       <Container fluid>
         <Row>
-          <Col xs={2}>
+          <Col xs={2} className="sidebar-col">
             <Sidebar />
           </Col>
-          <Col xs={10} style={{ marginLeft: '245px' }}>
+          <Col xs={12} md={10} className='mainContent'ref={mainContentRef} >
+            {/* <Header signedIn={signedIn} /> */}
             <Routes>
               <Route path="/" element={ <HomePage /> } />
-              {/* <Route path="/products" element={<ProductsPage />} /> */}
-              <Route path="/customer-support" element={<CustomerSupport />} />
+              <Route path="/mens-leather-jackets" element={ <MensLeatherJackets /> } />
+              <Route path="/maxi-dresses" element={ <MaxiDresses /> } />
+              <Route path='/trainers' element={ <Trainers />} />
+              <Route path="/contact-us" element={ <ContactUs /> } />
             </Routes>
           </Col>
         </Row>
       </Container>
-    </Router>
+    </>
   );
 }
 
 
+// --------------------------------------------    End   ------------------------------------------------------
 //                    HomePage component
 
 function HomePage() {
@@ -76,20 +90,20 @@ function HomePage() {
 }
 
 
-// company history/ description
+//                                 company history/ description
 function History() {
-    return (
-        <div className='container'>
-            <h1 className="History-Head">Welcome to Luxe Looks</h1>
-            <p className="History-text">
-            Founded in the early 1990s, Luxe Looks was created by a group of
-            fashion-forward individuals who sought to bring sophistication and glamour
-            to the masses. Using only the highest-quality materials and cutting-edge
-            designs, Luxe Looks has become a household name renowned for its stylish
-            and elegant clothing.
-            </p>
-        </div>
-    );
+  return (
+    <div className='container'>
+        <h1 className="History-Head"><span className='backgroundHighlight'>Welcome to</span> Luxe Looks</h1>
+        <p className="History-text">
+        Founded in the early 1990s, Luxe Looks was created by a group of
+        fashion-forward individuals who sought to bring sophistication and glamour
+        to the masses. Using only the highest-quality materials and cutting-edge
+        designs, Luxe Looks has become a household name renowned for its stylish
+        and elegant clothing.
+        </p>
+    </div>
+  );
 }
 
 //                                   sidebar component
@@ -98,11 +112,11 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <Nav className="flex-column">
-                <Nav.Link href="#product1">Men's Leather Jackets</Nav.Link>
-                <Nav.Link href="#product2">Women's Maxi Dresses</Nav.Link>
-                <Nav.Link href="#product3">Children's Trainers</Nav.Link>
-                <Nav.Link href="">Contact Us</Nav.Link>
-                <Nav.Link as={Link} to="./customer-support">Customer Support</Nav.Link>
+                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                <Nav.Link as={Link} to="./mens-leather-jackets">Men's Leather Jackets</Nav.Link>
+                <Nav.Link as={Link} to="./maxi-dresses">Women's Maxi Dresses</Nav.Link>
+                <Nav.Link as={Link} to="./trainers">Children's Trainers</Nav.Link>
+                <Nav.Link as={Link} to="./contact-us">Contact Us</Nav.Link>
                 {/* orders */}
                 {/* My Details */}
                 {/* Basket */}
@@ -110,19 +124,6 @@ function Sidebar() {
         </div>
     );
 }
-
-//product components
-// function Product({ name, description }) {
-//     return (
-//         <Card border="primary" style={{ width:'30%' }} bg="primary">
-//             <Card.Body>
-//                 <Card.Title>{name}</Card.Title>
-//                 <Card.Text style={{ fontFamily: 'monospace'}}>{description}</Card.Text>   
-//             </Card.Body>
-//         </Card>
-//     );
-// }
-
 
 
 export default App;

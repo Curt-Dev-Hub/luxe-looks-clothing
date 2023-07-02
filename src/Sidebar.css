@@ -18,9 +18,8 @@
 }
 
 .nav-link:hover {
-    background-color: #FF69B4; /* dark pink */
-    transition: background-color 0.5s ease-in-out;
-    border-radius: 4px;
+    background-image: linear-gradient(90deg, rgba(218,217,231,0.9570027840237657) 0%, rgba(200,200,227,1) 25%, rgba(246,250,251,0.18473387646074055) 100%);
+    border-radius: 3px;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -41,8 +40,9 @@
     color: #212529;
     text-decoration: none;
     font-weight: bolder;
+    text-align: center;
 }
 
 .sidebar a:hover {
-    color: #007bff;
+    color: #090c39;
 }

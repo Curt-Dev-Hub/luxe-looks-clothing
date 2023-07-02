@@ -8,11 +8,22 @@ header {
     background-position-x: left;
 }
 
-h1 {
+.intro-title {
     text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 63px;
 }
 
 .header-logo {
     opacity: 0.7;
     border-radius: 4px;
 }  
+
+.highlighter {
+    color: gold;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+}

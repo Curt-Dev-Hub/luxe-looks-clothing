@@ -8,7 +8,7 @@ function Header({ signedIn }) {
   return (
     <header>
       <img className='header-logo' src={logo} alt="company-logo" />
-      <h1>Hand woven, quality garments, for your daily needs..</h1>
+      <h1 className='intro-title'>Hand woven, <span className='highlighter'>quality</span> garments, for your daily needs..</h1>
       {signedIn ? (
         <h5>Welcome User365</h5>
       ) : (

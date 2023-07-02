@@ -13,7 +13,7 @@ function ProductList() {
           price: '£129.99',
           image: 'men_jacket.jpg',
         },
-        // Add more products for men's category if needed
+    
         {
             name: "Luxe Leather Jacket",
             description: "A stylish, rugged men's leather jacket with multiple pockets and a classic, vintage design. Perfect for cooler weather and making a fashion statement.",
@@ -37,7 +37,7 @@ function ProductList() {
           price: '£59.99',
           image: 'women_dress.jpg',
         },
-        // Add more products for women's category if needed
+        
         {
             name: "Luxe Women's Maxi Dress",
             description: "This elegant women's maxi dress features a flattering silhouette, with a flowy skirt and a delicate, feminine neckline. Made with soft and comfortable fabric, it's perfect for any formal occasion.",
@@ -62,7 +62,7 @@ function ProductList() {
           price: '£24.99',
           image: 'kids_sneakers.jpg',
         },
-        // Add more products for kids' category if needed
+        
         {
             name: "Luxe Children's Trainer",
             description: "These fun and stylish children's sneakers feature bright colors and a trendy design, making them a hit with kids. They're also made with durable materials and offer excellent support and comfort for active kids on the go.",

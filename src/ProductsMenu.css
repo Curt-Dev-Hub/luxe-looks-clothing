@@ -2,46 +2,94 @@ h2 {
     padding-left: 5px;
     margin-bottom: 20px;
     margin-top: 0;
+    text-align: center;
+    padding-top: 40px;
+    text-decoration: underline;
+    text-decoration-color: #433c43;
+    padding-bottom: 5px;
+    font-family: 'Lato', sans-serif;
 }
 .card {
-    margin: 45px;
+    margin: 18px;
+}
+
+#uniqueMargin {
+    margin-bottom: 0px;
+}
+
+.titleTextContainer {
+    min-width: 54%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    margin-right: 1%;
 }
 
 .card-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: solid rgba(0, 0, 0, 0.315) 2px;
+    padding: 16px;
+    border-radius: 4px;
+    width: 96%;
 }
 
 .card-title {
-    margin-right: 2%;
+    font-weight: bolder;
+    padding: 9px;
+    text-align: center;
+    /* background-color: rgba(233, 150, 122, 0.24); */
+    background: rgb(218,217,231);
+    background: linear-gradient(90deg, rgba(218,217,231,0.9570027840237657) 0%, rgba(200,200,227,1) 25%, rgba(246,250,251,0.18473387646074055) 100%);
+    border-radius: 3px;
+    width: 40%;
+    font-family: 'Lato', sans-serif;
+
 }
 .menuContainer {
     background-image: url(../public/backgroundPic.avif);
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: 2000px 2000px;
     background-position-x: right;
     animation: slideBackground 15s infinite;
 }
 
 .card-text {
-    width: 90%;
+    width: 89%;
+    line-height: 1.5;
 }
 
 .card-img {
-    width: 35%;
-    height: 90%;
-    border-radius: 8px;
-    border: solid 2px #c82bb8;
+    width: 338px;
+    height: 230px;
+    border-radius: 3px;
 }
 
-/* @keyframes slideBackground {
-    0% {
-      background-position-x: right;
+@media (max-width: 784px) {
+    .card-body {
+        flex-direction: column-reverse;
     }
-    50% {
-      background-position-x: left;
+
+    .titleTextContainer {
+        margin-top: 15px;
+        width: 76%;
+        justify-content: center;
+        padding: 45px 15px 15px;
     }
-    100% {
-      background-position-x: right;
+
+    .card-img {
+        width: 73%
     }
-} */
+}
+
+@media (max-width: 1063px) {
+    .card-body {
+        flex-direction: column-reverse;
+    }
+
+    .titleTextContainer {
+        padding: 30px;
+    }
+}

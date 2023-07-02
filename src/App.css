@@ -1,3 +1,7 @@
+p {
+  font-family: 'Lato', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -6,18 +10,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-image: url(./backgroundPic.avif); */
-  background-image: url(../public/backgroundPic.avif);
-  /* background-size: cover; */
-  background-position-x: left;
-  animation: slideBackground 15s infinite;
+  position: relative;
+  z-index: -2;
+  background: linear-gradient(315deg, rgba(107,103,173,1) 0%, rgba(212,219,227,1) 40%, rgba(0,212,255,1) 100%);
+  min-height: 349px;
+}
+
+/*                  container overlay to provide fade and flash effect when changing between pics */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  animation-name: slide;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.History-Head {
+  font-style: italic;
+  transform: rotate(-10deg);
+}
+
+.backgroundHighlight {
+  background-color: #eff708b2;
+  padding: 5px;
+  border-radius: 2px;
 }
 
 .History-text {
-  width: 60%;
-  border: 3px solid rgba(0, 0, 255, 0.22);
-  border-radius: 3px;
+  width: 36%;
   padding: 16px;
+  font-family: 'Lato', sans-serif;
+  line-height: 24px;
+  /* background-color: #90aac182; */
+  align-self: flex-end;
+  position: absolute;
+  top: 15%;
+  right: 9px;
+  height: 153px;
 }
 
 .App-logo {
@@ -36,6 +72,43 @@
   color: white;
 }
 
+.navbar {
+  display: none;
+}
+
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    background-image: url('../public/background/small-shots/clem-onojeghuo-4fDBYLyhqbI-unsplash.jpg'), url('../public/background/small-shots/felipe-galvan-AhfrA5VQNpM-unsplash.jpg');
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    background-image: url('../public/background/small-shots/felipe-galvan-AhfrA5VQNpM-unsplash.jpg');
+  }
+  41% {
+    opacity: 0;
+    background-image: url('../public/background/small-shots/felipe-galvan-AhfrA5VQNpM-unsplash.jpg');
+  }
+  50% {
+    background-image: url('../public/background/small-shots/felipe-galvan-AhfrA5VQNpM-unsplash.jpg');
+  }
+  66% {
+    opacity: 1;
+    background-image: url('../public/background/small-shots/quinton-coetzee-XOzJoGs1svQ-unsplash.jpg');
+  }
+  74% {
+    opacity: 1;
+    background-image: url('../public/background/small-shots/quinton-coetzee-XOzJoGs1svQ-unsplash.jpg');
+  }
+  100% {
+    background-image: url('../public/background/small-shots/clem-onojeghuo-4fDBYLyhqbI-unsplash.jpg');
+  }
+}
+
 
 @keyframes slideBackground {
   0% {
@@ -48,3 +121,83 @@
     background-position-x: right;
   }
 }
+
+@media (max-width: 767px) {  
+  
+  .sidebar {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+
+  .container::before {
+    animation-name: slide;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      background-image: url('../public/background/small-shots/clem-onojeghuo-4fDBYLyhqbI-unsplash.jpg'), url('../public/background/small-shots/felipe-galvan-AhfrA5VQNpM-unsplash.jpg');
+    }
+    8% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 1;
+      background-image: url('../public/background/xtra-small-shots/felipe-galvan-AhfrA5VQNpM-unsplash.jpg');
+    }
+    41% {
+      opacity: 0;
+      background-image: url('../public/background/xtra-small-shots/felipe-galvan-AhfrA5VQNpM-unsplash.jpg');
+    }
+    50% {
+      background-image: url('../public/background/xtra-small-shots/felipe-galvan-AhfrA5VQNpM-unsplash.jpg');
+    }
+    66% {
+      opacity: 1;
+      background-image: url('../public/background/xtra-small-shots/quinton-coetzee-XOzJoGs1svQ-unsplash.jpg');
+    }
+    74% {
+      opacity: 1;
+      background-image: url('../public/background/xtra-small-shots/quinton-coetzee-XOzJoGs1svQ-unsplash.jpg');
+    }
+    100% {
+      background-image: url('../public/background/xtra-small-shots/clem-onojeghuo-4fDBYLyhqbI-unsplash.jpg');
+    }
+  } 
+}
+
+@media (min-width: 767px) {
+  .mainContent {
+    margin-left: 245px;
+  }
+}
+
+@media (max-width: 867px) {
+  .History-text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    display: none;
+  }
+  .mainContent {
+    margin-left: 245px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+  .mainContent {
+    margin-left: 245px;
+  }
+}
+
+/* 
+992px 1200px
+*/

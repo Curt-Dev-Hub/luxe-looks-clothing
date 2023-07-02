@@ -1,0 +1,90 @@
+/* Body Text - font-family: 'Lato', sans-serif;
+Title Text - font-family: 'Playfair Display SC', serif; */
+
+/* React Icons 
+HiBuildingOffice2
+FcCustomerSupport
+FcSalesPerformance
+
+*/
+
+form {
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    text-align: center;
+    height: 30px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contactPageWrapper {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: aqua;
+    padding: 3%;
+    flex-direction: column;
+}
+
+.contactHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-h1 {
+    font-size: 60px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.contactPage_img {
+    width: 102%;
+    border-radius: 2px;
+}
+
+.sub-heading {
+    font-family: 'Lato', sans-serif;  
+    margin-top: 30px; 
+}
+
+.socials {
+    font-size: 30px;
+    min-width: fit-content;
+    align-self: baseline;
+    margin-top: 10px;
+}
+
+.facebook-icon, .twitter-icon, .insta-icon {
+    padding: 6px;
+}
+
+.contact-intro {
+    width: 66%;
+    align-self: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.form_container {
+    width: 45%;
+    align-self: center;
+    margin-top: 40px;
+    background-color: aliceblue;
+    border-radius: 4px;
+    box-shadow: #33333363 9px 6px 2px;
+    text-align: center;
+    padding: 3%;
+    min-width: fit-content;
+}
+button[type=submit] {
+    border: none;
+    background-color: aquamarine;
+    padding: 3%;
+    border-radius: 2px;
+}
