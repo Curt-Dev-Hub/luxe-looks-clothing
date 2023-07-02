@@ -113,7 +113,7 @@ function Sidebar() {
         <div className="sidebar">
             <Nav className="flex-column">
                 <Nav.Link as={Link} to="/">Home</Nav.Link>
-                <Nav.Link as={Link} to="./mens-leather-jackets">Men's Leather Jackets</Nav.Link>
+                <Nav.Link as={Link} to="./mens-leather-jackets">Leather Jackets</Nav.Link>
                 <Nav.Link as={Link} to="./maxi-dresses">Women's Maxi Dresses</Nav.Link>
                 <Nav.Link as={Link} to="./trainers">Children's Trainers</Nav.Link>
                 <Nav.Link as={Link} to="./contact-us">Contact Us</Nav.Link>
