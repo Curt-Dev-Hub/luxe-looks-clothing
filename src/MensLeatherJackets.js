@@ -14,7 +14,7 @@ export default function MensLeatherJackets() {
         <div className={styles.selectWrap}>
           <label>Choose a size:</label>
           <select name='size' className={styles.sizeSelect}>
-            <option value='' className={styles.sizeOptions} selected>Select</option>
+            <option value='' className={styles.sizeOptions} selected>Select</option>  {/* defaultValue='' */}
             <option value='small' className={styles.sizeOptions}>Small</option>
             <option value='medium' className={styles.sizeOptions}>Medium</option>
             <option value='large' className={styles.sizeOptions} >Large</option>

@@ -30,6 +30,7 @@ textarea {
     background-color: aqua;
     padding: 3%;
     flex-direction: column;
+    align-items: center;
 }
 
 .contactHeader {
@@ -46,6 +47,15 @@ textarea {
 .contactPage_img {
     width: 102%;
     border-radius: 2px;
+}
+
+.sub_section {
+    background-image: url(../public/backgroundPic.avif);
+    margin: 25px;
+    background-size: cover;
+    background-position-x: left;
+    border-radius: 2px;
+    padding: 15px;
 }
 
 .sub-heading {

@@ -22,32 +22,32 @@ function ContactUs() {
       <img className='contactPage_img' src={`${process.env.PUBLIC_URL}/christina-wocintechchat-com-LQ1t-8Ms5PY-unsplash.jpg`} alt='An image of 2 people talking at a table'></img>
       
       <section className='sub_section'>
-        <h2 className="sub-heading">Customer Service</h2>
+        <h3 className="sub-heading">Customer Service</h3>
         <p>Email: support@luxelooks.com</p>
         <p>Phone: 1-800-123-4567</p>
       </section>
 
       <section className='sub_section'>
-        <h2 className="sub-heading">Corporate Office</h2>
+        <h3 className="sub-heading">Corporate Office</h3>
         <p>Address: 123 Fashion Street, Cityville, Country</p>
         <p>Email: info@luxelooks.com</p>
         <p>Phone: 1-800-987-6543</p>
       </section>
 
       <section className='sub_section'>
-        <h2 className="sub-heading">Wholesale Inquiries</h2>
+        <h3 className="sub-heading">Wholesale Inquiries</h3>
         <p>Email: wholesale@luxelooks.com</p>
         <p>Phone: 1-800-555-7890</p>
       </section>
 
       <section className='sub_section'>
-        <h2 className="sub-heading">Press and Media</h2>
+        <h3 className="sub-heading">Press and Media</h3>
         <p>Email: press@luxelooks.com</p>
         <p>Phone: 1-800-222-3333</p>
       </section>
 
       <section className='form_container'>
-        <h2 className="sub-heading">Send Us a Message</h2>
+        <h3 className="sub-heading">Send Us a Message</h3>
         <p>Fill out the form below and one of our team members will be in touch shortly.</p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label><br />
