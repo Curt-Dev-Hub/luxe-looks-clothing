@@ -15,7 +15,7 @@ export default function ProductsMenu() {
                     Perfect for cooler weather and making a fashion statement.
                   </Card.Text>
                 </div>
-                <Card.Img src={`${process.env.PUBLIC_URL}leather_jackets/robbie-noble-ruNmAlLLnpo-unsplash.jpg`} alt='Picture of a person in a black leather jacket'/>
+                <Card.Img src={`${process.env.PUBLIC_URL}/leather_jackets/robbie-noble-ruNmAlLLnpo-unsplash.jpg`} alt='Picture of a clothes rack full of Leather Jackets'/>
               </Card.Body>
             </Card>
         <div> 
@@ -28,7 +28,7 @@ export default function ProductsMenu() {
                     feminine neckline. Made with soft and comfortable fabric, they're perfect for any formal occasions.
                   </Card.Text>
                 </div>  
-                <Card.Img src={`${process.env.PUBLIC_URL}/womens_maxi_dresses/burgess-milner-OYYE4g-I5ZQ-unsplash(1).jpg`} alt='Picture of a person wearing a white with floral pattern maxi dress' />
+                <Card.Img src={`${process.env.PUBLIC_URL}/womens_maxi_dresses/burgess-milner-OYYE4g-I5ZQ-unsplash(1).jpg`} alt='An in store picture of maxi dresses in their clothes racks' />
               </Card.Body>
             </Card>
         </div>
@@ -42,7 +42,7 @@ export default function ProductsMenu() {
                       They're also made with durable materials and offer excellent support and comfort for active kids on the go.
                     </Card.Text>
                 </div>  
-                <Card.Img src={`${process.env.PUBLIC_URL}/kids_trainers/trainer4.jpg`} alt='A picture of a pair of bright yellow and light blue childs trainers' />
+                <Card.Img src={`${process.env.PUBLIC_URL}/kids_trainers/trainer4.jpg`} alt='A picture of a pair of pink childrens trainers with a hearts pattern' />
               </Card.Body>
             </Card>       
         </div>

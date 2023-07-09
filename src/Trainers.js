@@ -4,7 +4,7 @@ export default function Trainers() {
     return (
       <div className={styles.productGroupContainer}>
         <div className={styles.singleProductContainer}>
-          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}kids_trainers/trainer1.jpg`} alt='Picture of a person in a black leather jacket'/>
+          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/kids_trainers/trainer1.jpg`} alt='Picture of a pair of childs trainers yellow in colour with light blue and white highlights'/>
           <p className={styles.caption}>Rocket Racers - Yellow</p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>Over 16 In Stock</p>
@@ -22,7 +22,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className={styles.singleProductContainer}>
-        <img className={styles.productImage} src={`${process.env.PUBLIC_URL}kids_trainers/trainer2.jpg`} alt='Picture of a person in a black leather jacket'/>
+        <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/kids_trainers/trainer2.jpg`} alt='Picture of a pair of Grey childrens with a star pattern'/>
           <p className={styles.caption}>Twinkle Star - Flats</p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>11 In Stock</p>
@@ -40,7 +40,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className={styles.singleProductContainer}>
-          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}kids_trainers/trainer3.jpg`} alt='Picture of a person in a black leather jacket'/>
+          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/kids_trainers/trainer3.jpg`} alt='Picture of a pair of blue childrens with a star pattern'/>
           <p className={styles.caption}>Blue Prospects Trainer</p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>4 In Stock</p>
@@ -58,7 +58,7 @@ export default function Trainers() {
           </div>
         </div>
         <div className={styles.singleProductContainer}>
-          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}kids_trainers/trainer4.jpg`} alt='Picture of a person in a black leather jacket'/>
+          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/kids_trainers/trainer4.jpg`} alt='A picture of a pair of pink childrens trainers with a hearts pattern'/>
           <p className={styles.caption}>Heart Pattern - Flats </p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>8 In Stock</p>

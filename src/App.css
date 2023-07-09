@@ -168,6 +168,25 @@ p {
   } 
 }
 
+@media (max-width: 380px) {
+  .History-text {
+    height: fit-content;
+    position: unset;
+    border-radius: 3px;
+    line-height: 18px;
+    background-color: #f0f8ff6e;
+  }
+  .History-Head {
+    background-color: yellowgreen;
+    text-align: center;
+    width: 297px;
+  }
+  .container::before {
+    background-size: 100% 100%;
+  }
+}
+
+
 @media (min-width: 767px) {
   .mainContent {
     margin-left: 245px;

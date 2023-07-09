@@ -22,7 +22,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2px;
     margin-right: 1%;
 }
 
@@ -30,8 +29,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: solid rgba(0, 0, 0, 0.315) 2px;
-    padding: 16px;
+    border: solid rgba(0, 0, 0, 0.315) 1px;
+    padding: 8px;
     border-radius: 4px;
     width: 96%;
 }
@@ -40,7 +39,6 @@ h2 {
     font-weight: bolder;
     padding: 9px;
     text-align: center;
-    /* background-color: rgba(233, 150, 122, 0.24); */
     background: rgb(218,217,231);
     background: linear-gradient(90deg, rgba(218,217,231,0.9570027840237657) 0%, rgba(200,200,227,1) 25%, rgba(246,250,251,0.18473387646074055) 100%);
     border-radius: 3px;
@@ -50,10 +48,13 @@ h2 {
 }
 .menuContainer {
     background-image: url(../public/backgroundPic.avif);
-    /* background-size: cover; */
     background-size: 2000px 2000px;
     background-position-x: right;
     animation: slideBackground 15s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .card-text {
@@ -67,16 +68,56 @@ h2 {
     border-radius: 3px;
 }
 
+@media (max-width: 380px) {
+    .card-img {
+        width: 100%;
+    }
+
+    .menuContainer {
+        padding: 9px;
+    }
+
+    .card-body {
+        flex-direction: column;
+    }
+
+    .card-title {
+        width: 91%;
+    }
+}
+
+@media (max-width: 516px) {
+    .card-img {
+        width: 96%;
+    }
+}
+
 @media (max-width: 784px) {
     .card-body {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        padding: 6px;
     }
 
     .titleTextContainer {
         margin-top: 15px;
         width: 76%;
         justify-content: center;
-        padding: 45px 15px 15px;
+    }
+
+    .card-img {
+        width: 77%;
+    }
+}
+
+@media (min-width: 784px) {
+    .card-body {
+        flex-direction: column;
+    }
+
+    .titleTextContainer {
+        width: 78%;
+        justify-content: center;
+        /* padding: 45px 15px 15px; */
     }
 
     .card-img {
@@ -84,9 +125,17 @@ h2 {
     }
 }
 
-@media (max-width: 1063px) {
+@media (min-width: 1063px) {
     .card-body {
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 91%;
+    }
+
+    .card-title {
+        width: 87%;
     }
 
     .titleTextContainer {

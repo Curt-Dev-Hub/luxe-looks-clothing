@@ -4,7 +4,7 @@ import styles from './ProductPage.module.css';
     return (
       <div className={styles.productGroupContainer}>
         <div className={styles.singleProductContainer}>
-          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}womens_maxi_dresses/maxi_dress1.jpeg`} alt='Picture of a person in a black leather jacket'/>
+          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/womens_maxi_dresses/maxi_dress1.jpeg`} alt='Picture of a lady wearing a floral Maxi Dress'/>
           <p className={styles.caption}>Floral Embroidered Maxi Dress</p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>7 In Stock</p>
@@ -22,7 +22,7 @@ import styles from './ProductPage.module.css';
           </div>
         </div>
         <div className={styles.singleProductContainer}>
-        <img className={styles.productImage} src={`${process.env.PUBLIC_URL}womens_maxi_dresses/maxi_dress2.jpeg`} alt='Picture of a person in a black leather jacket'/>
+        <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/womens_maxi_dresses/maxi_dress2.jpeg`} alt='Picture of a lady in a geometric multi colour design Maxi Dress'/>
           <p className={styles.caption}>Geometric Colour Design Maxi Dress</p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>6 In Stock</p>
@@ -40,7 +40,7 @@ import styles from './ProductPage.module.css';
           </div>
         </div>
         <div className={styles.singleProductContainer}>
-          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}womens_maxi_dresses/skg-photography-YKcKLhuhUVk-unsplash.jpg`} alt='Picture of a person in a black leather jacket'/>
+          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/womens_maxi_dresses/skg-photography-YKcKLhuhUVk-unsplash.jpg`} alt='Picture of a lady in a red diamonte studded Maxi Dress'/>
           <p className={styles.caption}>Red Maxi Dress Diamonte Pattern</p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>Over 16 In Stock</p>
@@ -58,7 +58,7 @@ import styles from './ProductPage.module.css';
           </div>
         </div>
         <div className={styles.singleProductContainer}>
-          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}womens_maxi_dresses/maxi_dress4.jpeg`} alt='Picture of a person in a black leather jacket'/>
+          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/womens_maxi_dresses/maxi_dress4.jpeg`} alt='Picture of 2 ladies in green and orange patterned Maxi Dresses'/>
           <p className={styles.caption}>Pattern Maxi Dress - Available in 2 different colors</p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>9 In Stock</p>
@@ -76,7 +76,7 @@ import styles from './ProductPage.module.css';
           </div>
         </div>
         <div className={styles.singleProductContainer}>
-          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}womens_maxi_dresses/joseph-kellner-LDBikYMpvpw-unsplash.jpg`} alt='Picture of a person in a black leather jacket'/>
+          <img className={styles.productImage} src={`${process.env.PUBLIC_URL}/womens_maxi_dresses/joseph-kellner-LDBikYMpvpw-unsplash.jpg`} alt='Picture of a lady wearing a blue Maxi Dress with a red and dark green leaf pattern'/>
           <p className={styles.caption}>Multicoloured Leaf Pattern Maxi Dress</p>
           <div className={styles.infoContainer}>
             <p className={styles.stockLevel}>10 In Stock</p>

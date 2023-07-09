@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // add further logic to handle form sub,ission
+    // add further logic to handle form submission
   }
   return (
     <div className='contactPageWrapper'>
