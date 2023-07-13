@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/luxe-looks-clothing/static/css/main.df00d460.css",
-    "main.js": "/luxe-looks-clothing/static/js/main.5f3fc1ca.js",
+    "main.css": "/luxe-looks-clothing/static/css/main.a87a0533.css",
+    "main.js": "/luxe-looks-clothing/static/js/main.94ff426c.js",
     "static/js/787.02b39855.chunk.js": "/luxe-looks-clothing/static/js/787.02b39855.chunk.js",
     "static/media/clem-onojeghuo-4fDBYLyhqbI-unsplash.jpg": "/luxe-looks-clothing/static/media/clem-onojeghuo-4fDBYLyhqbI-unsplash.c3a93ad93e36cc0e57b1.jpg",
     "static/media/felipe-galvan-AhfrA5VQNpM-unsplash.jpg": "/luxe-looks-clothing/static/media/felipe-galvan-AhfrA5VQNpM-unsplash.cc5eccb374cf7f0e0711.jpg",
@@ -9,12 +9,12 @@
     "static/media/quinton-coetzee-XOzJoGs1svQ-unsplash.jpg": "/luxe-looks-clothing/static/media/quinton-coetzee-XOzJoGs1svQ-unsplash.86bc52ef3054886f660f.jpg",
     "static/media/backgroundPic.avif": "/luxe-looks-clothing/static/media/backgroundPic.481e0a573223decefea4.avif",
     "index.html": "/luxe-looks-clothing/index.html",
-    "main.df00d460.css.map": "/luxe-looks-clothing/static/css/main.df00d460.css.map",
-    "main.5f3fc1ca.js.map": "/luxe-looks-clothing/static/js/main.5f3fc1ca.js.map",
+    "main.a87a0533.css.map": "/luxe-looks-clothing/static/css/main.a87a0533.css.map",
+    "main.94ff426c.js.map": "/luxe-looks-clothing/static/js/main.94ff426c.js.map",
     "787.02b39855.chunk.js.map": "/luxe-looks-clothing/static/js/787.02b39855.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df00d460.css",
-    "static/js/main.5f3fc1ca.js"
+    "static/css/main.a87a0533.css",
+    "static/js/main.94ff426c.js"
   ]
 }
