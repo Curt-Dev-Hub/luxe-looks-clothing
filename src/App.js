@@ -6,8 +6,8 @@ import logo from './luxe_looks.png';
 import Header from './components/Heading';
 import './Sidebar.css';
 import ProductsMenu from './ProductsMenu';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; deprecated
-import { BrowserRouter as Router, Routes, Route, Link,useLocation } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route, Link,useLocation } from 'react-router-dom'; previous build
+import { BrowserRouter, Routes, Route, Link,useLocation } from 'react-router-dom';
 import { Container, Row, Col, Nav, NavDropdown, Navbar, NavItem, MenuItem  } from 'react-bootstrap';
 import ContactUs from './ContactUs';
 import { useMediaQuery } from 'react-responsive';
@@ -33,11 +33,13 @@ function App() {
   const signedIn = Math.random() < 0.5; // 50% chance of being truthy/falsy;
   const [showSidebar, setShowSidebar] = useState(false);
 
+  //
+
   return (
     <>
       <nav className={styles.nav}>
         <Link to='/' className={styles.siteLink}>
-          <img src={logo} width="70" height="70" />
+          <img className='homeLogoLink' src={logo} width="60" height="60" />
         </Link>
         <ul>
           <li>
@@ -75,8 +77,6 @@ function App() {
   );
 }
 
-
-// --------------------------------------------    End   ------------------------------------------------------
 //                    HomePage component
 
 function HomePage() {

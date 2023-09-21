@@ -4,17 +4,23 @@
     bottom: 0;
     left: 0;
     width: 200px;
-    overflow-y: scroll;
     /* background-color: #3d73a8; */
     background-image: url(../public/backgroundPic.avif);
     background-size: cover;
     border-right: 1px solid #dee2e6;
     padding: 88px 15px 0 30px;
+    max-height: 100vh;
+}
+
+.flex-column {
+    height: 61%;
+    margin-top: 11%;
 }
 
 .nav-link {
     display: block;
     padding: 10px;
+    margin-bottom: 9%;
 }
 
 .nav-link:hover {
@@ -45,4 +51,10 @@
 
 .sidebar a:hover {
     color: #090c39;
+}
+
+@media screen and (max-height: 533px) {
+    .flex-column {
+        margin-top: 0;
+    }
 }

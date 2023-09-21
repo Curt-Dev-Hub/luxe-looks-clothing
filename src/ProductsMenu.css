@@ -9,9 +9,6 @@ h2 {
     padding-bottom: 5px;
     font-family: 'Lato', sans-serif;
 }
-.card {
-    margin: 18px;
-}
 
 #uniqueMargin {
     margin-bottom: 0px;
@@ -29,7 +26,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: solid rgba(0, 0, 0, 0.315) 1px;
     padding: 8px;
     border-radius: 4px;
     width: 96%;
@@ -54,18 +50,18 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .card-text {
     width: 89%;
     line-height: 1.5;
+    text-align: center;
 }
 
 .card-img {
     width: 338px;
-    height: 230px;
-    border-radius: 3px;
+    height: 294px;
+    object-fit: contain;
 }
 
 @media (max-width: 380px) {
@@ -75,6 +71,7 @@ h2 {
 
     .menuContainer {
         padding: 9px;
+        overflow: hidden;
     }
 
     .card-body {
@@ -88,9 +85,16 @@ h2 {
 
 @media (max-width: 516px) {
     .card-img {
-        width: 96%;
+        width: 79%;
     }
 }
+
+@media screen and (min-width: 615px) {
+    .card-text {
+        font-size: 26px;
+    }
+}
+
 
 @media (max-width: 784px) {
     .card-body {
@@ -103,13 +107,9 @@ h2 {
         width: 76%;
         justify-content: center;
     }
-
-    .card-img {
-        width: 77%;
-    }
 }
 
-@media (min-width: 784px) {
+@media (min-width: 785px) {
     .card-body {
         flex-direction: column;
     }
@@ -121,7 +121,7 @@ h2 {
     }
 
     .card-img {
-        width: 73%
+        width: 73%;
     }
 }
 
@@ -135,7 +135,7 @@ h2 {
     }
 
     .card-title {
-        width: 87%;
+        width: 54%;
     }
 
     .titleTextContainer {

@@ -12,6 +12,11 @@
     top: 0;
     z-index: 100;
 }
+
+.homeLogoLink {
+    border-radius: 2px;
+    width: 50px;
+}
   
 .siteLink {
     font-size: 2rem;
@@ -37,6 +42,7 @@
 .nav li {
     border-radius: 2px;
     padding: 5px;
+    text-align: center;
 }
   
 .nav li.active {
@@ -53,20 +59,30 @@
     }
 
     .nav ul {
-        gap: 0.5rem;
+        gap: unset;
     }
 }
 
 @media (max-width: 380px) {
     .nav {
         font-size: 10px;
-        padding: 0;
+        width: 100%;
+        gap: unset;
+    }
+    .nav a {
+        width: 21%;
+    }
+    .homeLogoLink {
+        width: 94%;
+    }
+    .nav ul {
+        gap: unset;
     }
 }
 
 @media (max-width: 500px) {
     .nav {
-        font-size: 12px;
+        font-size: 0.6rem;
     }
 }
 

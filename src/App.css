@@ -6,6 +6,10 @@ p {
   text-align: center;
 }
 
+.mainContent {
+  width: fit-content;
+}
+
 .container {
   display: flex;
   flex-direction: column;
